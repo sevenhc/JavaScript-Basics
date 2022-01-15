@@ -9,7 +9,8 @@ const myObject = {
 
 console.log(myObject);
 
-// this is not limited to just string, int ro boolean. add functions, arrays, objects and etc. 
+// this is not limited to just string, int ro boolean. add functions, 
+// arrays (arrays will be explain in next slide '4 - arrays.js'), objects and etc. 
 // just have to define them as key value pairs. 
 
 const mySecondObject = {
