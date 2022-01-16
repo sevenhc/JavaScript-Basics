@@ -34,3 +34,37 @@ const myFunctionObject = {
 console.log(myFunctionObject.add(1,2));
 console.log(myFunctionObject.minus(1,2));
 console.log(myFunctionObject.multiply(1,2));
+
+//Obejcts are reference type. which means value stored in the heap and pointer to the value stored in the stack,
+// when you copy a reference type variable, it just copy the pointer. not the real object. 
+
+const objectOne = {
+    FirstName: "Hasitha",
+    LastName: "Chamikara",
+    Age : "33", 
+    Address : {
+        StreetName: "Daham Mw",
+        City: "Maharagama"
+    }
+}
+
+const objectOneCopy = objectOne;
+
+objectOneCopy.FirstName = "Shashini";
+
+console.log(objectOne);
+console.log(objectOneCopy);
+
+//both variables retured the same value. because of both variable refered to the same object. 
+//in order to get a copy of an object we can use  JavaScript Object.assign() function.
+//lets take the above objectOne
+
+const objectOneSecondCopy = Object.assign({}, objectOne);
+objectOneSecondCopy.LastName = "Dushanthika";
+objectOneSecondCopy.Address.City = "Colombo";
+console.log(objectOneSecondCopy);
+
+
+
+
+
