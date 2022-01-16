@@ -62,9 +62,11 @@ console.log(objectOneCopy);
 const objectOneSecondCopy = Object.assign({}, objectOne);
 objectOneSecondCopy.LastName = "Dushanthika";
 objectOneSecondCopy.Address.City = "Colombo";
+console.log(objectOne);
 console.log(objectOneSecondCopy);
 
 
+// NOTE: this methodes does not do a deep clone. explain in the next lesson "5 - spreadnrest"
 
 
 

@@ -34,3 +34,5 @@ console.log(firstArrayCopy);
 const firstArrayCopyTwo = firstArray.slice();
 firstArrayCopyTwo[0] = "Chair";
 console.log(firstArrayCopyTwo);
+
+// NOTE: this methodes does not do a deep clone. explain in the next lesson "5 - spreadnrest"
