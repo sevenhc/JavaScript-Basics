@@ -57,3 +57,35 @@ const arrayDeepClone = JSON.parse(JSON.stringify(arrayTwo));
 arrayDeepClone[0].RegNumber = "WP XYZ 2541";
 console.log(arrayTwo);
 console.log(arrayDeepClone);
+
+// now lets talk about rest operator
+// let's say we have a function which take some argumenst and returns them as an array. 
+// how we normally write this code is as below.
+
+const ReturnArray = (a1, a2, a3) =>{
+    return [a1, a2, a3];
+}
+console.log(ReturnArray(123, 234, 345));
+
+// if we know the number of argument passed in to the function and it is fixed then above funtion is good. 
+// what if we send argument based on user inputs. 
+// we can call the function like this ReturnArray(123, 234, 345, 456, 567); 
+// this will not throw an error. 
+// but this will always return array with only first three nummbers.
+// because function does not take more than three (3) arguments. 
+// to work with dynamic number of values pass in to the function, we can use rest operator. 
+
+const RestOpReturnArray = (...args) =>{
+    return args;
+}
+console.log(RestOpReturnArray(123, 234, 345));
+
+// rest operator take any nymber of values. and put it in to an array. 
+// so in this case 'args' will be an array. 
+
+
+
+
+
+
+
